@@ -13,3 +13,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
         
+      - name: my ip
+        run: curl -X 'https://api.ipify.org/?format=json'
+        
