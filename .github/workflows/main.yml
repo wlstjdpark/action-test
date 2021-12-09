@@ -16,4 +16,5 @@ jobs:
       - name: my ip
         run: curl "https://api.ipify.org?format=json"
 
-      - uses: actions/javascript-action@v1.0.1
+      - name: 태그 남기기
+        uses: actions/javascript-action@v1.0.1
