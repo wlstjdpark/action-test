@@ -5,9 +5,17 @@ on:
     branches: [master]  
 
 jobs:
-  runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
   
-  steps:
-    - name: ls -al!!!!!
-      run: ls -al
-  
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: ls -al!!!!!
+        run: ls -al
+      
+      - name: docker run test
+        uses: docker://alpine:3.8
+        
+
+
