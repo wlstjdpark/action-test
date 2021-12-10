@@ -10,4 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: ls
-        run: ls -al
+        run: |
+          ls -al && echo MY_HOST: $MY_HOST && echo MY_PORT: $MY_PORT
+        env:
+          MY_HOST: host
+          MY_PORT: 5432
+          
+        
