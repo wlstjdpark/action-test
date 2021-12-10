@@ -19,7 +19,7 @@ jobs:
           path: output.log
   download-output-file:
     runs-on: ubuntu-latest
-    needs: upload-output-file
+#    needs: upload-output-file
     steps:
       - run: echo ok!
         shell: bash
