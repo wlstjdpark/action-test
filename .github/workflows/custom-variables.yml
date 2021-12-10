@@ -1,0 +1,13 @@
+name: custom variables
+
+on:
+  push:
+    branches: [master]
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+  steps:
+    - name: ls
+      run: ls -al
