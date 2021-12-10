@@ -1,0 +1,13 @@
+name: docker image referencing
+
+on:
+  push:
+    branches: [master]  
+
+jobs:
+  runs-on: ubuntu-latest
+  
+  steps:
+    - name: ls -al!!!!!
+      run: ls -al
+  
