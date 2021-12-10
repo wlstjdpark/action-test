@@ -1,0 +1,22 @@
+# This is a basic workflow to help you get started with Actions
+
+name: matrix sleep
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  sleep:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        time_array: [1,2,3,4,5,6,7]
+    steps:
+      - run: sleep ${{ matrix.time_array }}
+      
