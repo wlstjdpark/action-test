@@ -1,0 +1,46 @@
+{
+  "name": "richgom-web-front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@microsoft/signalr": "^5.0.4",
+    "@sentry/nextjs": "^6.8.0",
+    "cors": "^2.8.5",
+    "dayjs": "^1.10.4",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "firebase": "^8.8.0",
+    "immer": "^8.0.1",
+    "isomorphic-unfetch": "^3.1.0",
+    "next": "^11.0.1",
+    "num-to-korean": "^0.4.3",
+    "rc-slider": "^9.3.1",
+    "react": "^17.0.2",
+    "react-countup": "^4.3.3",
+    "react-dom": "^17.0.1",
+    "react-loader-spinner": "^3.1.14",
+    "react-responsive-carousel": "^3.2.18",
+    "react-toastify": "^6.2.0",
+    "styled-components": "^5.2.1",
+    "ua-parser-js": "^0.7.28",
+    "yarn": "^1.22.5"
+  },
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "prodStart": "node server.js",
+    "debug-android": "adb start-server && adb reverse tcp:3000 tcp:3000 && adb reverse tcp:44375 tcp:44375 && adb reverse tcp:54732 tcp:54732"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/d3": "^6.7.0",
+    "@types/styled-components": "^5.1.5",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "eslint": "^7.30.0",
+    "eslint-plugin-react": "^7.24.0",
+    "react-syntax-highlighter": "^15.4.3"
+  }
+}
