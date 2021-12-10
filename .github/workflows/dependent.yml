@@ -1,0 +1,35 @@
+name: dependent
+
+on:
+  push:
+    branches: [master]
+    
+jobs:
+  waiting-10sec:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep %$MY_TIME && echo elapsed time %$MY_TIMEsec.
+        env:
+          MY_TIME: 10
+  waiting-5sec:
+    needs: waiting-10sec
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep %MY_TIME && echo elapsed time %MY_TIMEsec.
+        env:
+          MY_TIME: 5
+  waiting-3sec:
+    needs: waiting-5sec
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep %MY_TIME && echo elapsed time %MY_TIMEsec.
+        env:
+          MY_TIME: 3
+  waiting-2sec:
+    needs: waiting-3sec
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep %MY_TIME && echo elapsed time %MY_TIMEsec.
+        env:
+          MY_TIME: 2
+  
