@@ -10,5 +10,5 @@ jobs:
     
     steps:
       - name: Run build script
-        run: ./github/scripts/build2.sh
+        run: ./.github/scripts/build2.sh
         shell: bash
