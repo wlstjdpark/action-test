@@ -1,0 +1,14 @@
+name: shell test
+
+on:
+  push:
+    branches: [master]
+   
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+  steps:
+    - name: Run build script
+      run: ./github/scripts/build2.sh
+      shell: bash
