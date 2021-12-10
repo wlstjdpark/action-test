@@ -8,7 +8,7 @@ jobs:
   waiting-10sec:
     runs-on: ubuntu-latest
     steps:
-      - run: sleep %$MY_TIME && echo elapsed time %$MY_TIMEsec.
+      - run: sleep %MY_TIME && echo elapsed time %$MY_TIMEsec.
         env:
           MY_TIME: 10
   waiting-5sec:
