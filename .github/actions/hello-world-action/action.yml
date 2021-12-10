@@ -1,5 +1,9 @@
 name: "Example"
 description: "Receives file and generates output"
+
+runs: ubuntu-latest
+
+
 inputs:
   file-path: # id of input
     description: "Path to test script"
