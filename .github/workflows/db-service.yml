@@ -16,6 +16,8 @@ jobs:
         uses: actions/checkout@v2
       - name: Install dependencies
         run: npm ci
+      - name: npm install pg
+        run: npm install pg
       - name: Connect to PostgresSQL
         run: node postgres_client.js
         env:
