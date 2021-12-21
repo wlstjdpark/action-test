@@ -5,7 +5,7 @@ on:
   
 jobs:
   call-workflow-passing-data:
-    uses: wlstjdpark/action-test/.github/workflows/workflow-B.yml@main
+    uses: wlstjdpark/action-test/.github/workflows/workflow-B.yml@master
     with:
       username: jinsung
     secrets:
