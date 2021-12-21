@@ -1,0 +1,15 @@
+name: Calling reusable workflow
+
+on:
+  push
+  
+jobs:
+  call-workflow-1:
+    uses: wlstjdpark/action-test/.github/workflows/workflow-B.yml@main
+    
+  call-workflow-passing-data:
+    uses: wlstjdpark/action-test/.github/workflows/workflow-B.yml@main
+    with:
+      username: jinsung
+    secrets:
+      token: ${{ secrets.TOKEN }}
