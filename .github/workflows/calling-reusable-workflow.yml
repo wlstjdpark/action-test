@@ -8,5 +8,3 @@ jobs:
     uses: wlstjdpark/action-test/.github/workflows/workflow-B.yml@master
     with:
       username: jinsung
-    secrets:
-      token: ${{ secrets.TOKEN }}
