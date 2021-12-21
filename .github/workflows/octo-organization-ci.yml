@@ -17,7 +17,10 @@ jobs:
       - name: one-line script
         run: ehco Hey! How have you been?
         
-      - run: echo Sometimes I miss when we are studying together.
+      - name: $default-branch
+        run: echo Sometimes I miss when we are studying together. $default-branch
+        
+        
         
     
     
