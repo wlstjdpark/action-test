@@ -1,0 +1,18 @@
+name: My Action
+description: "Receives input and secret"
+
+runs: ubuntu-latest
+
+
+inputs:
+  username: # id of input
+    description: "Path to username"
+    required: true
+    type: string
+    default: "parkjinsung"
+secrets:
+  token:
+    descriptino: "token"
+    required: true
+    type: string
+    default: "token1"
