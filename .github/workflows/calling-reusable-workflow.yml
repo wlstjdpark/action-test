@@ -4,9 +4,6 @@ on:
   push
   
 jobs:
-  call-workflow-1:
-    uses: wlstjdpark/action-test/.github/workflows/workflow-B.yml@96ea33b97eb8424f3a6c8822754b94124fa12250
-    
   call-workflow-passing-data:
     uses: wlstjdpark/action-test/.github/workflows/workflow-B.yml@96ea33b97eb8424f3a6c8822754b94124fa12250
     with:
