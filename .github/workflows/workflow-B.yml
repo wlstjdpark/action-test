@@ -19,4 +19,4 @@ jobs:
       - uses: ./.github/actions/my-action@v1
         with:
           username: ${{ inputs.username }}
-          token: ${{ secerts.token }}
+          token: ${{ secrets.token }}
