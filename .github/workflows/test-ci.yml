@@ -1,6 +1,6 @@
 
           
-name: Octo Organization CI
+name: test-ci
 
 on:
   push:
