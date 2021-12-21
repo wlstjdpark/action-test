@@ -1,0 +1,23 @@
+name: Octo Organization CI
+
+on:
+  push:
+    branches: [ $default-branch ]
+  pull_request:
+    branches: [ $default-branch ]
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: checkout~!
+        uses: actions/checkout@v2
+        
+      - name: one-line script
+        run: ehco Hey! How have you been?
+        
+      - run: echo Sometimes I miss when we are studying together.
+        
+    
+    
