@@ -11,8 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: checkout~!
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
         
       - name: one-line script
         run: ehco Hey! How have you been?
